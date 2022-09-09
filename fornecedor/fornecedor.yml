@@ -1,9 +1,11 @@
 spring:
     datasource:
         driver-class-name: org.h2.Driver
-        url: jdbc:mysql://localhost/db_fornecedor?createDatabaseIfNotExist=true&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+        url: jdbc:mysql://localhost/db_fornecedor
         username: root
         password: root
     jpa:
         hibernate:
-            ddl-auto: create-drop
+            ddl-auto: update
+            
+            
