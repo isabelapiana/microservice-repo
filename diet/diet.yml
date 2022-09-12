@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    password: postgres
+    username: root
+    url: 'jdbc:mysql://localhost:5432/microservice-diet'
+  jpa:
+    hibernate:
+      ddl-auto: update
+            
+            
