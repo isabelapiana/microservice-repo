@@ -1,6 +1,6 @@
 spring:
   datasource:
-    password: root
+    password: database
     url: jdbc:postgresql://localhost:5432/microservice-diet
     username: postgres
   jpa:
