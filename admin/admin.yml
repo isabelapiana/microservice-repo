@@ -1,18 +1,21 @@
 spring:
   datasource:
-    password: root
-    url: jdbc:postgresql://localhost:5432/microservice-admin
+    url: jdbc:postgresql://database-1.co3n5hj6lnhk.sa-east-1.rds.amazonaws.com:5432/microservice-admin-group2
     username: postgres
+    password: postgres153227%
+    driver-class-name: org.postgresql.Driver
+
   jpa:
-    hibernate:
-      ddl-auto: update
+    database-platform: postgres
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQL81Dialect
-        format_sql: true
-        jdbc:
-          lob:
-            non_contextual_creation: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        ddl-auto: update
+    generate-ddl: true
     show-sql: true
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Brazil/East
             
             
