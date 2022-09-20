@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: microservice-pacient
   datasource:
     password: root
     url: jdbc:postgresql://localhost:5432/microservice-pacient
@@ -14,4 +16,4 @@ spring:
         jdbc:
           lob:
             non_contextual_creation: true
-    show-sql: true  
+    show-sql: true
